@@ -15,7 +15,7 @@ nearly all the aspects of so-called DTV services: <br>
 * Timeshift TV
 * VOD (Video On Demand)
 * Teletext
-* Booking-Program service
+* Booking-Program service <br>
 and more.. <br>
 
 Since it is called High Level API, this is defined from the user's or UI's point of view. <br><br>
