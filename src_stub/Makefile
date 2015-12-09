@@ -1,15 +1,14 @@
-DTVOBJS = $(patsubst %.c,%.o,$(wildcard *.c))
 
 LIB_FILE = libdtvapi.so
-LIB_DIR = ../lib
-INC_DIR = ../inc
+LIB_DIR  = ../lib
+INC_DIR  = ../inc
 
-all: 	dtvobj srclib
+CFLAGS += -g -O2 -shared -fPIC -std=c99 -I$(INC_DIR)
 
-dtvobj:	$(DTVOBJS)
-
-srclib:
-	$(CC) -shared -fPIC -o -I$(INC_DIR) $(LIB_DIR)/$(LIB_FILE) *.o 
+all: dtvobj
+	
+dtvobj:
+	$(CC) $(CFLAGS) $(wildcard *.c) -o $(LIB_DIR)/$(LIB_FILE)
 	
 clean:
 	@find -name *.o -exec rm -f {} \;

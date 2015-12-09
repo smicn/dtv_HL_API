@@ -21,7 +21,7 @@ void dtv__upgrade_get_absolute_path( char *dir, int dir_buflen )
 {
 	if( dir != NULL && dir_buflen >= 32 )
 	{
-		strcpy( dir, "/mnt/sd/", dir_buflen );
+		strncpy( dir, "/mnt/sd/", dir_buflen );
 	}
 }
 
@@ -76,14 +76,14 @@ void dtv__upgrade_select_file( int file_index )
 /*
  @ start software upgrade.
  */
-void dtv__settings_start_software_upgrade( bool bOTA )
+void dtv__upgrade_start_software_upgrade( bool bOTA )
 {
 }
 
 /*
  @ get software upgrade progress by percent [0, 100].
  */
-int dtv__settings_get_software_upgrade_progress(void)
+int dtv__upgrade_get_software_upgrade_progress(void)
 {
 	return 50;
 }
@@ -91,7 +91,7 @@ int dtv__settings_get_software_upgrade_progress(void)
 /*
  @ get software upgrade status, return like "loading", "burning", "success", "failed".
  */
-const char *dtv__settings_get_software_upgrade_status(void)
+const char *dtv__upgrade_get_software_upgrade_status(void)
 {
 	return "loading";
 }
@@ -99,6 +99,6 @@ const char *dtv__settings_get_software_upgrade_status(void)
 /*
  @ stop/cancel software upgrade.
  */
-void dtv__settings_stop_software_upgrade(void)
+void dtv__upgrade_stop_software_upgrade(void)
 {
 }

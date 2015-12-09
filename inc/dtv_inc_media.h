@@ -72,7 +72,7 @@ int dtv__media_get_file_size_kb( int file_index );
 /*
  @ get playable duration of given file.
  */
-void dtv__media_get_file_playable_duration( char *hhmmss, int time_bufsize, int file_index );
+void dtv__media_get_file_playable_duration( char *hhmmss, int file_index );
 
 /*
  @ select given directory and expand it for media scan, if it is a directory.

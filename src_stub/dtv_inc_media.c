@@ -150,7 +150,7 @@ void dtv__media_get_current_file_full_path( char *path, int path_buflen )
 /*
  @ rename a file or directory.
  */
-void dtv__media_rename_file( int file_index )
+void dtv__media_rename_file( const char *file_name, int file_index )
 {
 }
 

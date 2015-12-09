@@ -513,33 +513,3 @@ int dtv__settings_get_channel_sort_mode(void)
 	return 0;
 }
 
-/*
- @ start software upgrade.
- */
-void dtv__settings_start_software_upgrade( bool bOTA )
-{
-}
-
-/*
- @ get software upgrade progress by percent [0, 100].
- */
-int dtv__settings_get_software_upgrade_progress(void)
-{
-	return 12;
-}
-
-/*
- @ get software upgrade status, return like "loading", "burning", "success", "failed".
- */
-const char *dtv__settings_get_software_upgrade_status(void)
-{
-	return "loading";
-}
-
-/*
- @ stop/cancel software upgrade.
- */
-void dtv__settings_stop_software_upgrade(void)
-{
-}
-
