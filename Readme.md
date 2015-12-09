@@ -18,5 +18,6 @@ nearly all the aspects of so-called DTV services: <br>
 * Booking-Program service
 and more.. <br>
 
-Since it is called High Level API, this is defined from the user's or UI's point of view. <br>
+Since it is called High Level API, this is defined from the user's or UI's point of view. <br><br>
 There are nearly no meaningful comments and explainations for the API, because these APIs are self-explained. We tried to implement them on several different platforms based on different software architectures. Believe me, it is clear and easy for the guys in this industry.
+<br>
